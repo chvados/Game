@@ -1,0 +1,152 @@
+
+.game *{
+    flex: 1;
+}
+
+.game{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+}
+#game_register{
+    text-align: center;
+}
+.game_poll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+}
+#start{
+    background: rgb(111, 255, 82);
+    cursor: pointer;
+}
+#start:disabled{
+    background: rgb(165, 165, 165);
+}
+#start:disabled, #start{
+    padding:  10px 50px;
+    border-radius: 54px;
+    border: none;
+    margin: 20px  0;
+}
+.game_regulations{
+    flex: 0.5;
+    padding: 50px;
+    background-color: rgb(61, 182, 75);
+    color: white;
+    border-radius: 50px;
+}
+.game_regulations h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+}
+#input_nickname{
+    border: none;
+    border-bottom: 2px solid #0d5801;
+    background: none;
+    font-size: 40px;
+}
+#game_window{
+    height: 100%;
+    padding: 10px;
+    margin: 0 20px ;
+    box-sizing: border-box;
+    justify-content: space-between;
+    border-radius: 50px;
+}
+.timer *{
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+.timer{
+    height: auto;
+    font-size: 5rem;
+    text-align: center;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin: 0 50px;
+}
+.timer_back{
+    background-color: rgb(61, 182, 75);
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+}
+.game_field{
+    text-align: center;
+    border-right: 5px solid rgb(61, 182, 75);
+    border-left: 5px solid rgb(61, 182, 75);
+    padding: 0 20px;
+}
+#player_name{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 900;
+}
+#game_table{
+    margin-top: 30px;
+    width: 100%;
+}
+
+#text{
+    border: none;
+    border-bottom: 2px solid rgb(61, 182, 75);
+}
+
+#input{
+    background:rgb(61, 182, 75);
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: white;
+}
+#game_end{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+
+#game_end-result{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(143, 214, 159);
+    color: white;
+    padding: 10px 0;
+    font-size: 50px;
+    border-bottom: 3px solid yellow;
+}
+
+#restart_game{
+    background: rgb(111, 255, 82);
+    cursor: pointer;
+    padding:  10px 50px;
+    border-radius: 54px;
+    border: none;
+    margin: 20px  0;
+    color: white;
+    font-weight: bold;
+}
+.game_end-time span,.game_end-count span{
+    text-align: right;
+    padding-right: 30px;
+}
+.game_end-time,.game_end-count{
+    margin: 10px 0;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+#game_end-player{
+    margin: 30px 0;
+    font-size: 20px;
+    border-bottom: 3px solid yellow;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="js/main.js" defer></script> -->
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/game.js" defer></script>
+    <link rel="stylesheet" href="static/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ИГРА -->
+    <div class="game">
+        <div class="game_poll">
+            <div id="game_window" style="display:none">
+                <div class="timer">
+                    <div class="timer_back">
+                        <p id="minutes"></p>
+                        <span>:</span>
+                        <p id="seconds"></p>
+                    </div>
+                </div>
+                <div class="game_field">
+                    <p>Введите 4х значеное число</p>
+                    <form>
+                        <input type="text" id="text" maxlength="4">
+                        <input type="button" value="Угадать" id="input">
+                    </form>
+                    <div class="game_table">
+                        <table id="game_table">
+                            <thead>
+                                <tr>
+                                    <th>Ответ игрока</th>
+                                    <th>Коровы</th>
+                                    <th>Быки</th>
+                                </tr>
+                            </thead>
+                            <tbody id="game_table-body">
+        
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="game_register">
+                <h1>Старт</h1>
+                <input type="text" id="input_nickname" required placeholder="Введите ваше имя"><br>
+                <input type="submit" id="start" disabled>
+            </div>
+            <div id="game_end" style="display:none">
+                <div id="game_end-result">
+                    
+                </div>
+                <div id="game_end-player">
+        
+                </div>
+                <div class="game_end-count">
+                    <span>Попыток: </span><div id="game_end-count">
+                </div>
+                    
+                </div>
+                <div class="game_end-time">
+                    <span>Осталось времени: </span><div id="game_end-time">
+                </div>
+        
+                </div>
+                <button id="restart_game">Играть ещё раз</button>
+            </div>
+        </div>
+        <div class="game_regulations">
+            <h3>Руководство по игре</h3>
+            <p>
+                Быки и коровы” — логическая игра, в ходе которой за несколько попыток 
+                один из игроков должен определить, что задумал другой игрок.
+            </p>
+            <p>
+                Каждый из игроков задумывает и записывает тайное 4-значное число с 
+                неповторяющимися цифрами. Игрок, который начинает игру по жребию, 
+                делает первую попытку отгадать число. Попытка — это 4-значное число
+                 с неповторяющимися цифрами, сообщаемое противнику. Противник сообщает
+                  в ответ, сколько цифр угадано без совпадения с их позициями в тайном
+                   числе (то есть количество коров) и сколько угадано вплоть до позиции
+                    в тайном числе (то есть количество быков). 
+            </p>
+            <p>
+                Задумано тайное число «3219».
+                Попытка: «2310».
+                Результат: две «коровы» (две цифры: «2» и «3» — угаданы на неверных позициях) и один «бык» (одна цифра «1» угадана вплоть до позиции).
+            </p>
+        </div>
+    </div>
+</body>
+</html>
